@@ -1,0 +1,39 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/paper-material/paper-material.html">
+<link rel="import" href="../../bower_components/neon-animation/animations/scale-up-animation.html">
+
+<dom-module id="location-section">
+    <style>
+
+    </style>
+    <template>
+
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'location-section',
+        behaviors: [
+          Polymer.NeonAnimationRunnerBehavior
+        ],
+        properties: {
+            opened:{
+                type: Boolean
+            },
+            entryAnimation: {
+                value: 'scale-up-animation'
+            }
+        },
+        listeners: {
+            'neon-animation-finish' : '_onNeonAnimationFinish'
+        },
+        show: function(){
+            this.opened = true;
+            this.playAnimation('entry');
+        },
+        _onNeonAnimationFinish: function(){
+            console.log('Finished!');
+        }
+    })
+</script>

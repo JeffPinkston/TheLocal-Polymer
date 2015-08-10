@@ -1,0 +1,27 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+<link rel="import" href="../../bower_components/google-map/google-map.html">
+
+<dom-module id="local-map">
+    <style>
+        :host {
+            display: inline;
+            top: 0;
+            left: 0;
+            right: 5em;
+            bottom: 0;
+        }
+    </style>
+    <template>
+        <google-map zoom="18" latitude="30.291552" longitude="-97.741521" disable-default-ui disable-zoom disable-drag
+                    additional-map-options='{"mapTypeId":"roadmap"}'>
+            <google-map-marker latitude="30.291552" longitude="-97.741521"
+                               title="The Local Pub & Patio"></google-map-marker>
+        </google-map>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'local-map'
+    })
+</script>

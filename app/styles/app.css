@@ -1,0 +1,80 @@
+@font-face {
+    font-family: tequilaSunset;
+    src: url('../styles/TequilaSunset-Regular.otf');
+}
+
+body {
+
+  font-family: tequilaSunset, 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  font-size: 18px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    line-height: 1.45;
+}
+
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1em; }
+
+paper-drawer-panel:not([narrow]) #navicon{
+  display:none;
+}
+
+paper-item{
+	color: #FFF;
+}
+
+neon-animated-pages {
+    height: 100%;
+}
+
+paper-toolbar{
+    background: url('../images/bg.jpg') repeat-x;
+}
+
+.location-left{
+    width: 60vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    color: #FFF;
+    background: #000;
+    font-size-adjust: inherit;
+    background: url('../images/borderless.png') repeat;
+}
+
+google-map{
+    height: 300px;
+    width: 37vw;
+}
+
+.location{
+    height:300px;
+
+}
+
+.address{
+    color: #fff;
+    text-align: center;
+    margin: 5px;
+}
+
+h3.toolbar{
+    background: url('../images/bg.jpg') repeat;
+    font-family: tequilaSunset;
+}
+
+.logo{
+    margin: 0 auto;
+}
+
+.brand{
+    text-align: center;
+}
+
+#topBar{
+    width: 100%;
+}

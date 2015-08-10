@@ -1,0 +1,24 @@
+{
+  "name": "TheLocal-Polymer",
+  "private": true,
+  "dependencies": {
+    "iron-elements": "PolymerElements/iron-elements#1.0.0",
+    "paper-elements": "PolymerElements/paper-elements#1.0.1",
+    "platinum-elements": "PolymerElements/platinum-elements#1.0.1",
+    "neon-elements": "PolymerElements/neon-elements#1.0.0",
+    "page": "visionmedia/page.js#~1.6.3",
+    "polymer": "~1.0.8",
+    "webcomponentsjs": "~0.7.9",
+    "google-apis": "GoogleWebComponents/google-apis#~1.0.2",
+    "google-map": "GoogleWebComponents/google-map#~1.0.3",
+    "google-streetview-pano": "GoogleWebComponents/google-streetview-pano#~1.0.1",
+    "google-signin": "GoogleWebComponents/google-signin#~1.0.3",
+    "google-calendar": "GoogleWebComponents/google-calendar#~1.0.1",
+    "Flowtype.js": "~1.1.0",
+    "jquery": "~2.1.4"
+  },
+  "devDependencies": {
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
+  }
+}

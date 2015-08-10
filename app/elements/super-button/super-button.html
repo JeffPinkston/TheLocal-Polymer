@@ -1,0 +1,47 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<dom-module id="super-button">
+    <style is="custom-style">
+        :host{
+
+        }
+        .header{
+            color: var(--ui-message-header-color) <!-- expose for styling -->
+        }
+
+    </style>
+    <template>
+        <div class="fullname">
+            <span>{{_computeFullName(first, last}}</span>
+        </div>
+    </template>
+</dom-module>
+
+<script>
+    Polymer({
+        is: 'super-button',
+        extends: 'button',
+        properties: {
+            first: String,
+            last: String,
+            age: {
+                type: Number,
+                value: 42,
+                observer: '_ageChanged', //observer function
+                notify: true
+            },
+            _computeFullName: function(first, last){
+                return first + " " + last;
+            },
+            count:{
+                type: Number,
+                readOnly: true,
+                reflectToAttribute: true
+            }
+        }
+    })
+</script>
+
+        <!-- <button id="super=button></button> Type extension element
+            must use this for form <input is="..">
+        -->

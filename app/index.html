@@ -1,0 +1,165 @@
+<!doctype html>
+<!--
+@license
+Copyright (c) 2015 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Polymer Starter Kit" />
+  <title>Polymer Starter Kit</title>
+  <!-- Place favicon.ico in the `app/` directory -->
+
+  <!-- Chrome for Android theme color -->
+  <meta name="theme-color" content="#303F9F">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tile color for Win8 -->
+  <meta name="msapplication-TileColor" content="#3372DF">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PSK">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="The Local">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+
+  <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/app.css">
+  <!-- endbuild-->
+
+  <!-- build:js bower_components/webcomponentsjs/webcomponents-lite.min.js -->
+  <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <!-- endbuild -->
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+</head>
+
+<body class="fullbleed layout vertical" style="background: url('images/bg.jpg')">
+
+
+    <!--<paper-drawer-panel>
+      <paper-header-panel drawer>
+        <paper-toolbar><paper-item>Menu</paper-item></paper-toolbar>
+        <paper-menu selected="0">
+          <paper-item>First</paper-item>
+          <paper-item>Second</paper-item>
+          <paper-item>Third</paper-item>
+        </paper-menu>
+      </paper-header-panel>-->
+
+      <paper-header-panel main>
+        <paper-toolbar class="toolbar horizontal layout" style="background: url('images/bg.jpg') repeat-x; text-align: center" justify="center" middle-justify="center">
+
+                <h3>The Local Pub And Patio</h3>
+
+
+        </paper-toolbar>
+        <div class="content">
+            <paper-item><img src="images/local_front.png"></paper-item>
+            <div class="address">
+                <h3 class="address">2610 Guadelupe Street</h3>
+                <h3 class="address">Open till 2AM Every Day</h3>
+            </div>
+            <paper-material class="location horizontal layout">
+                <div class="location-left">
+                    <h4>Where are we?</h4>
+                    <h4>2610 Guadelupe Street</h4>
+                    <h4>Parking can be found behind the bar in 12 conveniently marked spots.</h4>
+                </div>
+                <local-map></local-map>
+            </paper-material>
+
+
+
+          <paper-material elevation="1" style="height:500px;background-color:green;">Test 2</paper-material>
+        </div>
+      </paper-header-panel> 
+    <!--</paper-drawer-panel>
+  -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/Flowtype.js/flowtype.js"></script>
+</body>
+
+</html>
+
+<!-- 
+fullbleed
+paper-header-panel modes= scroll, seemed (no drop shadow), waterfall (adds drop shadow on scroll), waterfall-tall, cover
+cover- core-header-panel[mode=cover]::shadow #mainContainer{
+  left: 180px;
+}
+
+.content{
+  margin: 60px 180px 60px 0;
+}
+
+body{
+  background-color: #CCC;
+}
+paper-toolbar classes = tall, middle, bottom, indent, fit (removes passing and margin)
+
+paper-drawer-panel:not([narrow]) #navicon{
+  display:none;
+}
+
+<template is="auto-binding" id="tmpl">
+<h1>{{message}}</h1>
+</template>
+
+in app.js
+var tmpl = document.querySelector('#tmpl');
+tmpt.message = 'Hello Polycasters!';
+
+tmpl.addEventListener('template-bound', function(){
+  console.log('document.querySelector('paper-menu'));
+});
+
+
+//route change js imperative
+page.js
+
+//define routes
+page('/', home);
+page('/portfolio', portfolio);
+
+//Configure
+page({hashbang: true});
+
+function home(){
+  app.route = 'home';
+}
+
+function portfolio(){
+  app.route = 'portfolio';
+}
+
+//route change declarative - <more-routing>
+
+Polymore/more-routing.html
+
+//dummy data - Faker.js
+
+font-family: Roboto, 'Helvetica', sans-serif
+-->
